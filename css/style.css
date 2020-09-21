@@ -13,6 +13,7 @@ p {
 }
 
 .wrapper {
+    max-width: 100%;
     margin: 2rem 0;
 }
 
@@ -70,12 +71,12 @@ a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    margin: 2rem;
+    margin: 2rem 5rem;
     padding: 0 6rem;
 }
 
 .food-menu {
-    width: 35rem;
+    width: 25rem;
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
@@ -120,7 +121,14 @@ img {
     font-style: oblique;
 }
 
-@media screen and (max-width: 500px) {
+
+/* media queries */
+
+@media screen and (max-width: 540px) {
+    .menu {
+        margin: 0;
+        padding: 1rem;
+    }
     .food-menu {
         flex-direction: column;
     }
@@ -130,5 +138,20 @@ img {
     .food-list ul {
         flex-direction: column;
         text-align: center;
+    }
+    .food-menu span {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 1151px) {
+    .menu {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1551px) {
+    .food-menu {
+        width: 35rem;
     }
 }
