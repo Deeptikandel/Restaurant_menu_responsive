@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  color: rgb(145, 145, 145);
+}
+
+.wrapper {
+  margin: 2rem 0;
+}
+.title {
+  text-align: center;
+}
+.title h4 {
+  text-transform: capitalize;
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.title h4:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: rgb(238, 8, 96);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.food-list {
+  text-align: center;
+}
+.food-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.food-list li {
+  margin: 2rem 2rem 0 2rem;
+}
+.food-list a {
+  text-decoration: none;
+  color: rgb(145, 145, 145);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 2rem;
+}
+.food-menu {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.image {
+  align-items: center;
+}
+img:hover {
+  border-radius: 0;
+}
+img {
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 3px;
+  transition: 0.5s;
+}
+.menu-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.food-menu h4 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  border-bottom: 1px dashed #333;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.food-menu span {
+  float: right;
+  color: #ff7720;
+  font-style: oblique;
+}
+
+@media screen and (max-width: 500px) {
+  .food-menu {
+    flex-direction: column;
+  }
+  .menu-content {
+    text-align: center;
+  }
+  .food-list ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
